@@ -2,7 +2,7 @@
 
 import cv2
 
-path = "/home/jj/projects/projects/imagetosketch/barbie1.jpeg"
+path = "barbie1.jpeg"
 image = cv2.imread(path)
 if image is not None:
     print('Image loaded')

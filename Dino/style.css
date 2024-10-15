@@ -1,0 +1,51 @@
+
+.dino {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-image: url(dino.png);
+  bottom: 0px;
+}
+
+.obstacle {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-image: url(cactus.png);
+  bottom: 0px;
+}
+
+#desert {
+  position: absolute;
+  bottom: 0px;
+  background-image: url('bg.png');
+  background-repeat: repeat-x;
+  /* speed of the ground */
+  animation: slideright 600s infinite linear;
+  /* render for chrome and safari */
+  -webkit-animation: slideright 600s infinite linear;
+  /* width of the ground */
+  width: 400%;
+  /* height of the ground */
+  height: 200px;
+}
+
+/* ground movement slider */
+@keyframes slideright {
+  from {
+      background-position: 70000%;
+  }
+  to {
+      background-position: 0%;
+  }
+}
+
+/* render for chrome and safari */
+@-webkit-keyframes slideright {
+  from {
+      background-position: 70000%;
+  }
+  to {
+      background-position: 0%;
+  }
+}

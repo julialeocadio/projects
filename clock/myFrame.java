@@ -32,7 +32,7 @@ public class myFrame extends JFrame{
 
         setTime();
     }
-    public void setTime(){
+    private void setTime(){
         while(true){
             time = timeFormat.format(Calendar.getInstance().getTime());
             timeLabel.setText(time);
